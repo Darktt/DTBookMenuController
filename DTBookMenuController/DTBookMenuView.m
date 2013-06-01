@@ -56,6 +56,7 @@ typedef void (^DTMenuAnimationCompletion) (BOOL finished);
     [tableView setDataSource:self];
     [tableView setDelegate:self];
     [tableView setTag:kTableViewTag];
+    [tableView setAutoresizingMask:UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth];
     
     [self addSubview:tableView];
     

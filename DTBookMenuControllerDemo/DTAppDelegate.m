@@ -22,7 +22,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-    self.window.backgroundColor = [UIColor redColor];
+    self.window.backgroundColor = [UIColor blackColor];
     // Override point for customization after application launch.
     
     DTFirstViewController *first = [DTFirstViewController new];

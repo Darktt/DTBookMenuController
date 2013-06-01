@@ -30,6 +30,7 @@
     self = [super initWithFrame:frame];
     if (self == nil) return nil;
     
+    [self setAutoresizingMask:UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth];
     [self setBackgroundColor:[UIColor blackColor]];
     [self setAlpha:0.5f];
     

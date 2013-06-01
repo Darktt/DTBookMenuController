@@ -102,6 +102,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    [self.view setAutoresizingMask:UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth];
+    [self.view setBackgroundColor:[UIColor blackColor]];
 }
 
 - (void)dealloc
