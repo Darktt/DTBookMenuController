@@ -10,6 +10,10 @@
 		552E5C08175963AA00908D00 /* DTFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 552E5C05175963AA00908D00 /* DTFirstViewController.m */; };
 		552E5C09175963AA00908D00 /* DTSecoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 552E5C07175963AA00908D00 /* DTSecoundViewController.m */; };
 		552E5C0C17596B7900908D00 /* DTBookMenuShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 552E5C0B17596B7900908D00 /* DTBookMenuShadowView.m */; };
+		553DF7E417598BBC00FE4E67 /* MenuBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 553DF7E017598BBC00FE4E67 /* MenuBtn.png */; };
+		553DF7E517598BBC00FE4E67 /* MenuBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 553DF7E117598BBC00FE4E67 /* MenuBtn@2x.png */; };
+		553DF7EA1759938600FE4E67 /* MenuBtnPress.png in Resources */ = {isa = PBXBuildFile; fileRef = 553DF7E81759938600FE4E67 /* MenuBtnPress.png */; };
+		553DF7EB1759938600FE4E67 /* MenuBtnPress@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 553DF7E91759938600FE4E67 /* MenuBtnPress@2x.png */; };
 		55B7E71F1756310C00E46C19 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55B7E71E1756310C00E46C19 /* UIKit.framework */; };
 		55B7E7211756310C00E46C19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55B7E7201756310C00E46C19 /* Foundation.framework */; };
 		55B7E7231756310C00E46C19 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55B7E7221756310C00E46C19 /* CoreGraphics.framework */; };
@@ -31,6 +35,10 @@
 		552E5C0A17596B7900908D00 /* DTBookMenuShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTBookMenuShadowView.h; sourceTree = "<group>"; };
 		552E5C0B17596B7900908D00 /* DTBookMenuShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTBookMenuShadowView.m; sourceTree = "<group>"; };
 		552E5C0D1759712100908D00 /* DTBookMenuConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTBookMenuConfig.h; sourceTree = "<group>"; };
+		553DF7E017598BBC00FE4E67 /* MenuBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MenuBtn.png; sourceTree = "<group>"; };
+		553DF7E117598BBC00FE4E67 /* MenuBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MenuBtn@2x.png"; sourceTree = "<group>"; };
+		553DF7E81759938600FE4E67 /* MenuBtnPress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MenuBtnPress.png; sourceTree = "<group>"; };
+		553DF7E91759938600FE4E67 /* MenuBtnPress@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MenuBtnPress@2x.png"; sourceTree = "<group>"; };
 		55B7E71B1756310C00E46C19 /* DTBookMenuControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DTBookMenuControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55B7E71E1756310C00E46C19 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		55B7E7201756310C00E46C19 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,6 +72,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		553DF7DF17598BA400FE4E67 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				553DF7E017598BBC00FE4E67 /* MenuBtn.png */,
+				553DF7E117598BBC00FE4E67 /* MenuBtn@2x.png */,
+				553DF7E81759938600FE4E67 /* MenuBtnPress.png */,
+				553DF7E91759938600FE4E67 /* MenuBtnPress@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		55B7E7121756310C00E46C19 = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +149,7 @@
 				552E5C0B17596B7900908D00 /* DTBookMenuShadowView.m */,
 				55B7E7421756317D00E46C19 /* DTBookMenuView.h */,
 				55B7E7431756317D00E46C19 /* DTBookMenuView.m */,
+				553DF7DF17598BA400FE4E67 /* Images */,
 			);
 			name = DTBookMenuController;
 			path = ../DTBookMenuController;
@@ -191,6 +211,10 @@
 				55B7E7311756310C00E46C19 /* Default.png in Resources */,
 				55B7E7331756310C00E46C19 /* Default@2x.png in Resources */,
 				55B7E7351756310C00E46C19 /* Default-568h@2x.png in Resources */,
+				553DF7E417598BBC00FE4E67 /* MenuBtn.png in Resources */,
+				553DF7E517598BBC00FE4E67 /* MenuBtn@2x.png in Resources */,
+				553DF7EA1759938600FE4E67 /* MenuBtnPress.png in Resources */,
+				553DF7EB1759938600FE4E67 /* MenuBtnPress@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,10 +306,14 @@
 		55B7E7391756310C00E46C19 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Eden Li (85B39NPV8D)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Eden Li (85B39NPV8D)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DTBookMenuControllerDemo/DTBookMenuControllerDemo-Prefix.pch";
 				INFOPLIST_FILE = "DTBookMenuControllerDemo/DTBookMenuControllerDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "452B1A2C-E0EE-42EC-879C-BE9CB3074005";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "452B1A2C-E0EE-42EC-879C-BE9CB3074005";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -293,10 +321,14 @@
 		55B7E73A1756310C00E46C19 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Eden Li (85B39NPV8D)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Eden Li (85B39NPV8D)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DTBookMenuControllerDemo/DTBookMenuControllerDemo-Prefix.pch";
 				INFOPLIST_FILE = "DTBookMenuControllerDemo/DTBookMenuControllerDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "452B1A2C-E0EE-42EC-879C-BE9CB3074005";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "452B1A2C-E0EE-42EC-879C-BE9CB3074005";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

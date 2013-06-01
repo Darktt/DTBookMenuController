@@ -56,10 +56,7 @@
             [viewController.view setFrame:self.view.bounds];
             
             UINavigationController *nav = [self setNavigationWithRootViewController:viewController];
-            
-            UIBarButtonItem *showMenu = [[UIBarButtonItem alloc] initWithTitle:@"Show" style:UIBarButtonItemStyleBordered target:self action:@selector(showMenu)];
-            [viewController.navigationItem setLeftBarButtonItem:showMenu];
-            [showMenu release];
+            [self setBarButtonItemWithViewController:viewController];
             
             [self.view addSubview:nav.view];
             [self addChildViewController:nav];
@@ -138,17 +135,30 @@
 {
     UINavigationController *nav = [[[UINavigationController alloc] initWithRootViewController:viewController] autorelease];
     [nav.navigationBar setTintColor:kNavigationBackgroundColor];
-//    [nav.navigationBar setBackgroundColor:kNavigationBackgroundColor];
     [nav.view setFrame:self.view.bounds];
     
     return nav;
 }
 
-#pragma mark - 
+#pragma mark - UIBarButtonItem Setting
+
+- (void)setBarButtonItemWithViewController:(UIViewController *)viewController
+{
+    UIButton *showMenuBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [showMenuBtn setFrame:CGRectMake(0, 0, 44, 44)];
+    [showMenuBtn addTarget:self action:@selector(showMenu:) forControlEvents:UIControlEventTouchUpInside];
+    [showMenuBtn setBackgroundImage:kMenuBtn forState:UIControlStateNormal];
+    [showMenuBtn setBackgroundImage:kMenuBtnPress forState:UIControlStateHighlighted];
+    
+    UIBarButtonItem *showMenu = [[UIBarButtonItem alloc] initWithCustomView:showMenuBtn];
+    
+    [viewController.navigationItem setLeftBarButtonItem:showMenu];
+    [showMenu release];
+}
 
 #pragma mark - Menu Control Method
 
-- (void)showMenu
+- (IBAction)showMenu:(id)Sender
 {
     [_menuViewShadow setHidden:NO];
     [_menuView setMenuHidden:NO animation:YES];
@@ -177,10 +187,7 @@
     
     UIViewController *viewController = _viewControllers[index];
     UINavigationController *nav = [self setNavigationWithRootViewController:viewController];
-    
-    UIBarButtonItem *showMenu = [[UIBarButtonItem alloc] initWithTitle:@"Show" style:UIBarButtonItemStyleBordered target:self action:@selector(showMenu)];
-    [viewController.navigationItem setLeftBarButtonItem:showMenu];
-    [showMenu release];
+    [self setBarButtonItemWithViewController:viewController];
     
     [self.view insertSubview:nav.view atIndex:0];
     [self addChildViewController:nav];

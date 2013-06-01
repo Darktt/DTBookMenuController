@@ -14,5 +14,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-// DTBookMenuController
-#define kNavigationBackgroundColor [UIColor blackColor]
+/* DTBookMenuController */
+
+// Color
+#define kNavigationBackgroundColor  [UIColor blackColor]
+
+// Images
+#define kMenuBtn                    [UIImage imageNamed:@"MenuBtn.png"]
+#define kMenuBtnPress               [UIImage imageNamed:@"MenuBtnPress.png"]
