@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		552E5C08175963AA00908D00 /* DTFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 552E5C05175963AA00908D00 /* DTFirstViewController.m */; };
+		552E5C09175963AA00908D00 /* DTSecoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 552E5C07175963AA00908D00 /* DTSecoundViewController.m */; };
+		552E5C0C17596B7900908D00 /* DTBookMenuShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 552E5C0B17596B7900908D00 /* DTBookMenuShadowView.m */; };
 		55B7E71F1756310C00E46C19 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55B7E71E1756310C00E46C19 /* UIKit.framework */; };
 		55B7E7211756310C00E46C19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55B7E7201756310C00E46C19 /* Foundation.framework */; };
 		55B7E7231756310C00E46C19 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55B7E7221756310C00E46C19 /* CoreGraphics.framework */; };
@@ -16,9 +19,18 @@
 		55B7E7311756310C00E46C19 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 55B7E7301756310C00E46C19 /* Default.png */; };
 		55B7E7331756310C00E46C19 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55B7E7321756310C00E46C19 /* Default@2x.png */; };
 		55B7E7351756310C00E46C19 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55B7E7341756310C00E46C19 /* Default-568h@2x.png */; };
+		55B7E73D1756313400E46C19 /* DTBookMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B7E73C1756313400E46C19 /* DTBookMenuController.m */; };
+		55B7E7441756317D00E46C19 /* DTBookMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B7E7431756317D00E46C19 /* DTBookMenuView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		552E5C04175963AA00908D00 /* DTFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTFirstViewController.h; sourceTree = "<group>"; };
+		552E5C05175963AA00908D00 /* DTFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTFirstViewController.m; sourceTree = "<group>"; };
+		552E5C06175963AA00908D00 /* DTSecoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTSecoundViewController.h; sourceTree = "<group>"; };
+		552E5C07175963AA00908D00 /* DTSecoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTSecoundViewController.m; sourceTree = "<group>"; };
+		552E5C0A17596B7900908D00 /* DTBookMenuShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTBookMenuShadowView.h; sourceTree = "<group>"; };
+		552E5C0B17596B7900908D00 /* DTBookMenuShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTBookMenuShadowView.m; sourceTree = "<group>"; };
+		552E5C0D1759712100908D00 /* DTBookMenuConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTBookMenuConfig.h; sourceTree = "<group>"; };
 		55B7E71B1756310C00E46C19 /* DTBookMenuControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DTBookMenuControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55B7E71E1756310C00E46C19 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		55B7E7201756310C00E46C19 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -32,6 +44,10 @@
 		55B7E7301756310C00E46C19 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		55B7E7321756310C00E46C19 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		55B7E7341756310C00E46C19 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		55B7E73B1756313400E46C19 /* DTBookMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DTBookMenuController.h; path = DTBookMenuController/DTBookMenuController.h; sourceTree = SOURCE_ROOT; };
+		55B7E73C1756313400E46C19 /* DTBookMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTBookMenuController.m; path = DTBookMenuController/DTBookMenuController.m; sourceTree = SOURCE_ROOT; };
+		55B7E7421756317D00E46C19 /* DTBookMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTBookMenuView.h; sourceTree = "<group>"; };
+		55B7E7431756317D00E46C19 /* DTBookMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTBookMenuView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +96,11 @@
 			children = (
 				55B7E72D1756310C00E46C19 /* DTAppDelegate.h */,
 				55B7E72E1756310C00E46C19 /* DTAppDelegate.m */,
+				552E5C04175963AA00908D00 /* DTFirstViewController.h */,
+				552E5C05175963AA00908D00 /* DTFirstViewController.m */,
+				552E5C06175963AA00908D00 /* DTSecoundViewController.h */,
+				552E5C07175963AA00908D00 /* DTSecoundViewController.m */,
+				55B7E73E1756313B00E46C19 /* DTBookMenuController */,
 				55B7E7251756310C00E46C19 /* Supporting Files */,
 			);
 			path = DTBookMenuControllerDemo;
@@ -97,6 +118,21 @@
 				55B7E7341756310C00E46C19 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		55B7E73E1756313B00E46C19 /* DTBookMenuController */ = {
+			isa = PBXGroup;
+			children = (
+				552E5C0D1759712100908D00 /* DTBookMenuConfig.h */,
+				55B7E73B1756313400E46C19 /* DTBookMenuController.h */,
+				55B7E73C1756313400E46C19 /* DTBookMenuController.m */,
+				552E5C0A17596B7900908D00 /* DTBookMenuShadowView.h */,
+				552E5C0B17596B7900908D00 /* DTBookMenuShadowView.m */,
+				55B7E7421756317D00E46C19 /* DTBookMenuView.h */,
+				55B7E7431756317D00E46C19 /* DTBookMenuView.m */,
+			);
+			name = DTBookMenuController;
+			path = ../DTBookMenuController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +203,11 @@
 			files = (
 				55B7E72B1756310C00E46C19 /* main.m in Sources */,
 				55B7E72F1756310C00E46C19 /* DTAppDelegate.m in Sources */,
+				55B7E73D1756313400E46C19 /* DTBookMenuController.m in Sources */,
+				55B7E7441756317D00E46C19 /* DTBookMenuView.m in Sources */,
+				552E5C08175963AA00908D00 /* DTFirstViewController.m in Sources */,
+				552E5C09175963AA00908D00 /* DTSecoundViewController.m in Sources */,
+				552E5C0C17596B7900908D00 /* DTBookMenuShadowView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +320,7 @@
 				55B7E73A1756310C00E46C19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

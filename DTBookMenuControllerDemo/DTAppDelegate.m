@@ -7,6 +7,9 @@
 //
 
 #import "DTAppDelegate.h"
+#import "DTFirstViewController.h"
+#import "DTSecoundViewController.h"
+#import "DTBookMenuController.h"
 
 @implementation DTAppDelegate
 
@@ -19,8 +22,18 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    self.window.backgroundColor = [UIColor redColor];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    
+    DTFirstViewController *first = [DTFirstViewController new];
+    
+    DTSecoundViewController *secound = [DTSecoundViewController new];
+    
+    DTBookMenuController *menuView = [DTBookMenuController menuViewWithViewControllers:@[first, secound]];
+    [first release];
+    [secound release];
+    
+    [self.window setRootViewController:menuView];
     [self.window makeKeyAndVisible];
     return YES;
 }
