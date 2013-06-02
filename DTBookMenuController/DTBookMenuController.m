@@ -50,16 +50,23 @@
     _viewControllers = [[NSArray alloc] initWithArray:viewControllers];
     
     NSMutableArray *titles = [NSMutableArray array];
+    
     [_viewControllers enumerateObjectsUsingBlock:^(UIViewController *viewController, NSUInteger idx, BOOL *stop){
         
         if (idx == 0) {
-            [viewController.view setFrame:self.view.bounds];
-            
             UINavigationController *nav = [self setNavigationWithRootViewController:viewController];
+            [nav.view setFrame:self.view.bounds];
+            
             [self setBarButtonItemWithViewController:viewController];
             
             [self.view addSubview:nav.view];
             [self addChildViewController:nav];
+        }
+        
+        if (viewController.title == nil) {
+            [NSException raise:NSInvalidArgumentException
+                        format:@"%@-line %d: %@ title not set, Please set the title at initialize method.", [self class],  __LINE__, [viewController class]];
+            return;
         }
         
         [titles addObject:viewController.title];
