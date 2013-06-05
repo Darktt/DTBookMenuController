@@ -15,6 +15,7 @@
 // limitations under the License.
 
 #import <UIKit/UIKit.h>
+#import "DTInstancetype.h"
 
 @protocol DTBookMenuViewDelegate <NSObject>
 
@@ -29,7 +30,7 @@
 @property (nonatomic, assign) id<DTBookMenuViewDelegate> delegate;
 @property (nonatomic, assign, getter = isMenuHidden) BOOL menuHidden;
 
-+ (id)menuViewWithTitles:(NSArray *)titles;
++ (DTInstancetype)menuViewWithTitles:(NSArray *)titles;
 
 - (void)setMenuHidden:(BOOL)menuhidden animation:(BOOL)animation;
 

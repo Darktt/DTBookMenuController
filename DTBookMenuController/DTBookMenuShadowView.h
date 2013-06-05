@@ -15,9 +15,10 @@
 // limitations under the License.
 
 #import <UIKit/UIKit.h>
+#import "DTInstancetype.h"
 
 @interface DTBookMenuShadowView : UIView
 
-+ (id)menuShadowWithFrame:(CGRect)frame;
++ (DTInstancetype)menuShadowWithFrame:(CGRect)frame;
 
 @end

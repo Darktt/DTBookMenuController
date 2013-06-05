@@ -1,4 +1,4 @@
-// DTBookMenuController.h
+// DTInstancetype.h
 // 
 // Copyright (c) 2013 Darktt
 //
@@ -14,16 +14,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#import <UIKit/UIKit.h>
-#import "DTInstancetype.h"
-
-@class DTBookMenuView;
-
-@interface DTBookMenuController : UIViewController
-
-@property (nonatomic, readonly) NSArray *viewControllers;
-@property (nonatomic, readonly) DTBookMenuView *bookMenuView;
-
-+ (DTInstancetype)menuViewWithViewControllers:(NSArray *)viewControllers;
-
-@end
+#if __has_feature(objc_instancetype)
+#define DTInstancetype instancetype
+#else
+#define DTInstancetype id
+#endif

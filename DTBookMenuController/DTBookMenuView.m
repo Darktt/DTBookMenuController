@@ -32,7 +32,7 @@ typedef void (^DTMenuAnimationCompletion) (BOOL finished);
 
 @implementation DTBookMenuView
 
-+ (id)menuViewWithTitles:(NSArray *)titles
++ (DTInstancetype)menuViewWithTitles:(NSArray *)titles
 {
     DTBookMenuView *menuView = [[[DTBookMenuView alloc] initWithTitles:titles] autorelease];
     

@@ -28,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		550CDF60175CC8BC00407ADF /* DTInstancetype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTInstancetype.h; sourceTree = "<group>"; };
 		552E5C04175963AA00908D00 /* DTFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTFirstViewController.h; sourceTree = "<group>"; };
 		552E5C05175963AA00908D00 /* DTFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTFirstViewController.m; sourceTree = "<group>"; };
 		552E5C06175963AA00908D00 /* DTSecoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTSecoundViewController.h; sourceTree = "<group>"; };
@@ -143,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				552E5C0D1759712100908D00 /* DTBookMenuConfig.h */,
+				550CDF60175CC8BC00407ADF /* DTInstancetype.h */,
 				55B7E73B1756313400E46C19 /* DTBookMenuController.h */,
 				55B7E73C1756313400E46C19 /* DTBookMenuController.m */,
 				552E5C0A17596B7900908D00 /* DTBookMenuShadowView.h */,

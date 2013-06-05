@@ -18,14 +18,14 @@
 
 @implementation DTBookMenuShadowView
 
-+ (id)menuShadowWithFrame:(CGRect)frame
++ (DTInstancetype)menuShadowWithFrame:(CGRect)frame
 {
     DTBookMenuShadowView *menuShadow = [[[DTBookMenuShadowView alloc] initWithFrame:frame] autorelease];
     
     return menuShadow;
 }
 
-- (id)initWithFrame:(CGRect)frame
+- (DTInstancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self == nil) return nil;

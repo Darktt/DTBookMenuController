@@ -36,14 +36,14 @@
 
 @implementation DTBookMenuController
 
-+ (id)menuViewWithViewControllers:(NSArray *)viewControllers
++ (DTInstancetype)menuViewWithViewControllers:(NSArray *)viewControllers
 {
     DTBookMenuController *menuView = [[[DTBookMenuController alloc] initWithViewControllers:viewControllers] autorelease];
     
     return menuView;
 }
 
-- (id)initWithViewControllers:(NSArray *)viewControllers
+- (DTInstancetype)initWithViewControllers:(NSArray *)viewControllers
 {
     self = [super init];
     if (self == nil) return nil;
@@ -55,7 +55,6 @@
         
         if (idx == 0) {
             UINavigationController *nav = [self setNavigationWithRootViewController:viewController];
-            [nav.view setFrame:self.view.bounds];
             
             [self setBarButtonItemWithViewController:viewController];
             
@@ -66,7 +65,6 @@
         if (viewController.title == nil) {
             [NSException raise:NSInvalidArgumentException
                         format:@"%@-line %d: %@ title not set, Please set the title at initialize method.", [self class],  __LINE__, [viewController class]];
-            return;
         }
         
         [titles addObject:viewController.title];
@@ -186,14 +184,16 @@
     [_menuViewShadow setHidden:YES];
 }
 
-#pragma mark - DTBookMenuView Deleagte
+#pragma mark - DTBookMenuView Deleagte Method
 
 - (void)setViewControllAtIndex:(NSUInteger)index
 {
+    // Remove current childViewController
     UIViewController *childViewController = self.childViewControllers[0];
     [childViewController.view removeFromSuperview];
     [childViewController removeFromParentViewController];
     
+    // Readd new viewController into childViewController
     UIViewController *viewController = _viewControllers[index];
     UINavigationController *nav = [self setNavigationWithRootViewController:viewController];
     [self setBarButtonItemWithViewController:viewController];
@@ -201,7 +201,8 @@
     [self.view insertSubview:nav.view atIndex:0];
     [self addChildViewController:nav];
     
-    [_menuView setMenuHidden:!_menuView.menuHidden animation:YES];
+    // Close menuView
+    [_menuView setMenuHidden:YES animation:YES];
 }
 
 @end
