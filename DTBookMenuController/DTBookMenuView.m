@@ -96,7 +96,6 @@ typedef void (^DTMenuAnimationCompletion) (BOOL finished);
     if (selfFrame.origin.x <= -self.frame.size.width) {
         selfFrame.origin.x = - self.frame.size.width;
         _menuHidden = YES;
-        [[NSNotificationCenter defaultCenter] postNotificationName:DTBookMenuViewClosed object:nil];
     } else if (selfFrame.origin.x >= 0) {
         selfFrame.origin.x = 0;
         _menuHidden = NO;
