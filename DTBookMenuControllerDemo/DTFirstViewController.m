@@ -21,19 +21,6 @@
     
     [self setTitle:@"First"];
     
-    UILabel *labelView = [[UILabel alloc] initWithFrame:CGRectZero];
-    [labelView setText:@"TEST"];
-    [labelView setFont:[UIFont boldSystemFontOfSize:20.0f]];
-    [labelView setTextColor:[UIColor colorWithWhite:105/255.0f alpha:1]];
-    [labelView setBackgroundColor:[UIColor clearColor]];
-    [labelView setShadowColor:[UIColor whiteColor]];
-    [labelView setShadowOffset:CGSizeMake(0, 1)];
-    [labelView sizeToFit];
-    
-//    [self.navigationItem setTitleView:labelView];
-    
-    [labelView release];
-    
     return self;
 }
 
