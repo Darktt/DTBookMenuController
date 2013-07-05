@@ -10,14 +10,23 @@ Import the header file and declare in your appDelegate.
 
 	#import "DTBookMenuController"
 
-Initializing DTBookMenuController:
+Initializing DTBookMenuController in appDelegate:
 ``` objective-c
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+~
+~
 DTFirstViewController *first = [DTFirstViewController new];
 DTSecoundViewController *secound = [DTSecoundViewController new];
     
 DTBookMenuController *menuView = [DTBookMenuController menuViewWithViewControllers:@[first, secound]];
 [first release];
 [secound release];
+
+[self.window setRootViewController:menuView];
+~
+~
+}
 ```
 
 Set menu title at each viewController:
