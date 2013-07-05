@@ -16,14 +16,14 @@ Initializing DTBookMenuController in appDelegate:
 {
 ~
 ~
-DTFirstViewController *first = [DTFirstViewController new];
-DTSecoundViewController *secound = [DTSecoundViewController new];
+	DTFirstViewController *first = [DTFirstViewController new];
+	DTSecoundViewController *secound = [DTSecoundViewController new];
     
-DTBookMenuController *menuView = [DTBookMenuController menuViewWithViewControllers:@[first, secound]];
-[first release];
-[secound release];
+	DTBookMenuController *menuView = [DTBookMenuController menuViewWithViewControllers:@[first, secound]];
+	[first release];
+	[secound release];
 
-[self.window setRootViewController:menuView];
+	[self.window setRootViewController:menuView];
 ~
 ~
 }
